@@ -251,12 +251,10 @@ export default function Page() {
       {/* Main Content (12-col grid) */}
       <div className="flex-1 mt-2.5 min-h-0">
         <div className=" h-full pb-4">
-          <div className="grid grid-cols-1  md:grid-cols-12  h-full">
+          <div className="grid grid-cols-1 md:grid-cols-12 grid-rows-[1fr] h-full">
             {/* Question Card (Left) */}
-            <Card className="md:col-span-8 lg:col-span-9  md:mr-8 flex flex-col overflow-hidden">
-              <ScrollArea className="flex-1">
-                <QuestionCard />
-              </ScrollArea>
+            <Card className="md:col-span-8 lg:col-span-9 md:mr-8 h-full flex flex-col overflow-hidden">
+              <QuestionCard />
             </Card>
 
             {/* Desktop Navigation (Right) */}
